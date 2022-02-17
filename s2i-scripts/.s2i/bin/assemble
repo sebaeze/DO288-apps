@@ -36,6 +36,7 @@ else
     fi
   fi
 fi
-
+#
+echo '\n***\n****\n***\n **** termine de hacer el builddddddd **** \n '
 # Fix source directory permissions
 fix-permissions ./
