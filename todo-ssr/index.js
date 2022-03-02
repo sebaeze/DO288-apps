@@ -4,6 +4,7 @@ const axios = require("axios");
 const port = Number(process.env.PORT || 8080);
 const apiHost = process.env.API_HOST || "localhost:3000";
 
+console.log("..apiHost: ",apiHost,";");
 const app = express();
 
 app.set("view engine", "pug");
@@ -14,6 +15,8 @@ app.get("/", (req, res) => {
 
 app.get("/items", async (req, res) => {
   try {
+	  console.log("......estoy en /items");
+	  console.log("...api_to: "+`${apiHost}/api/items`+";") ;
     const items = await axios
       .get(`${apiHost}/api/items`)
       .then((response) => response.data);
