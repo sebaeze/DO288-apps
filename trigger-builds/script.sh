@@ -8,5 +8,6 @@ echo Build on $FECHA > info.html
 pwd
 ls -lta
 #
+echo "....voy a copiar en /var"
 cp info.html  /var/www/html
 #
