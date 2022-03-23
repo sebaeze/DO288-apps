@@ -7,5 +7,6 @@ echo Build on $FECHA > info.html
 #
 pwd
 ls -lta
-##cp info.html /opt/app-root/src/
+#
+cp info.html  /var/www/html
 #
