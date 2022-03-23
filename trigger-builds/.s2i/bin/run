@@ -1,0 +1,11 @@
+#! /bin/bash
+#
+echo '....(A) voy a copar'
+cp -R /opt/app-root/src /var/www/html
+echo '.......(B) termine de copiar'
+ls -lt /var/www/html
+#
+echo '..........(C) voy a ejecutar: /usr/libexec/s2i/run'
+#
+/usr/libexec/s2i/run
+#
